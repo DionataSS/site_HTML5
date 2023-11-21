@@ -5,38 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web HTML5</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('./background_image.jpg') center center fixed; /* Adicione o caminho para a sua imagem de fundo */
+            background-size: cover; /* Cobrir a tela inteira com a imagem */
+        }
+
         .content {
-            max-width: 900px; /* Adicionando uma largura máxima para o conteúdo */
-            margin: 1 auto; /* Centralizando o conteúdo na página */
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do conteúdo com opacidade */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         img {
-            max-width: 100%; /* Ajustando a largura da imagem para ser responsiva */
-            height: auto; /* Permitindo que a altura seja ajustada automaticamente */
-            width: 400px; /* Definindo a largura desejada */
-            height: 400px; /* Definindo a altura desejada */
+            max-width: 100%;
+            height: auto;
+            width: 400px;
+            height: 400px;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo do cabeçalho com opacidade */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo do rodapé com opacidade */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilizando o Sumário */
+        #summary {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo do sumário com opacidade */
+            color: #fff;
+            padding: 15px;
+        }
+
+        #summary ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #summary a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="content">
+
+    <div id="summary">
+        <ul>
+            <li><a href="#section1">Seção 1</a></li>
+            <li><a href="#section2">Seção 2</a></li>
+            <li><a href="#section3">Seção 3</a></li>
+            <li><a href="#section4">Seção 4</a></li>
+            <li><a href="#section5">Seção 5</a></li>
+        </ul>
+    </div>
+
+    <div class="content" id="section1">
         <header>
             <h1>Dionata Silveira</h1>
         </header>
-    </div>
-    
-    <main>
-        <div class="content">
+        <main>
             <h2>Programação Para Web E Sistemas Multimídia</h2>
             <p>Página desenvolvida para estudos</p>
-            <p>Visite meu portfólio: <a href="https://github.com/DionataSS" target="_blank">github.com/DionataSS</a></p>
-
+            <p>Visite meu site: <a href="https://github.com/DionataSS" target="_blank">github.com/DionataSS</a></p>
             <img src="./imagem01.png" alt="Imagem 1">
-        </div>
-    </main>
+        </main>
+    </div>
+
+    <div class="content" id="section2">
+        <main>
+            <h2>Seção 2</h2>
+            <!-- Conteúdo da Seção 2 -->
+        </main>
+    </div>
+
+    <div class="content" id="section3">
+        <main>
+            <h2>Seção 3</h2>
+            <!-- Conteúdo da Seção 3 -->
+        </main>
+    </div>
+
+    <div class="content" id="section4">
+        <main>
+            <h2>Seção 4</h2>
+            <!-- Conteúdo da Seção 4 -->
+        </main>
+    </div>
+
+    <div class="content" id="section5">
+        <main>
+            <h2>Seção 5</h2>
+            <!-- Conteúdo da Seção 5 -->
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2023 Dionata Silva da Silveira</p>
     </footer>
+
 </body>
 </html>
