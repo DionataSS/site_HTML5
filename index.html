@@ -6,18 +6,19 @@
     <title>Página Web HTML5</title>
     <script src="https://www.vlibras.gov.br/app/vlibras-plugin.js"></script>
     <style>
+          
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: url('./background_image.jpg') center center fixed;
-            background-size: cover;
+            background: url('./background_image.jpg') center center fixed; /* Adicione o caminho para a sua imagem de fundo */
+            background-size: cover; /* Cobrir a tela inteira com a imagem */
         }
 
         .content {
             max-width: 900px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do conteúdo com opacidade */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -30,7 +31,7 @@
         }
 
         header {
-            background-color: rgba(51, 51, 51, 0.9);
+            background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo do cabeçalho com opacidade */
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -45,7 +46,7 @@
         }
 
         footer {
-            background-color: rgba(51, 51, 51, 0.9);
+            background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo do rodapé com opacidade */
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -54,34 +55,12 @@
             width: 100%;
         }
 
-        /* Estilos para a barra de navegação */
-        nav {
-            background-color: #333;
-            overflow: hidden;
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
+        /* Estilizando o Sumário */
         #summary {
             position: fixed;
             top: 0;
             right: 0;
-            background-color: rgba(51, 51, 51, 0.9);
+            background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo do sumário com opacidade */
             color: #fff;
             padding: 15px;
         }
@@ -98,28 +77,21 @@
             margin-bottom: 10px;
         }
     </style>
-    <script src="https://www.vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script src="https://www.vlibras.gov.br/app/vlibras-plugin.js"></script>
 </head>
 <body>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-
-    <!-- Barra de Navegação -->
-    <nav>
-        <a href="#section1">Seção 1</a>
-        <a href="#section2">Seção 2</a>
-        <a href="#section3">Seção 3</a>
-        <a href="#section4">Seção 4</a>
-        <a href="#section5">Seção 5</a>
-    </nav>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</head>
+<body>
 
     <div id="summary">
         <ul>
@@ -144,7 +116,33 @@
         </main>
     </div>
 
-    <!-- Adicione as outras seções conforme necessário -->
+    <div class="content" id="section2">
+        <main>
+            <h2>Seção 2</h2>
+            <!-- Conteúdo da Seção 2 -->
+        </main>
+    </div>
+
+    <div class="content" id="section3">
+        <main>
+            <h2>Seção 3</h2>
+            <!-- Conteúdo da Seção 3 -->
+        </main>
+    </div>
+
+    <div class="content" id="section4">
+        <main>
+            <h2>Seção 4</h2>
+            <!-- Conteúdo da Seção 4 -->
+        </main>
+    </div>
+
+    <div class="content" id="section5">
+        <main>
+            <h2>Seção 5</h2>
+            <!-- Conteúdo da Seção 5 -->
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2023 Dionata Silva da Silveira</p>
